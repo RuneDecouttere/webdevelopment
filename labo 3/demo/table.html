@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabel</title>
+</head>
+<body>
+
+<table border="8px"...>
+<!--    dit stelt de breedte van de tabelcontour in-->
+    <caption>Voorbeeld van tabel</caption>
+<!--    De titel van de tabel, zal erboven staan-->
+    <thead>
+<!--    dit bevat de kolomnamen-->
+    <tr>
+        <th>kolom1</th>
+        <th>kolom2</th>
+        <th>kolom3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td colspan="3">1</td>
+<!--        tr = tablerow-->
+<!--        <td>1</td>-->
+<!--        <td>2</td>-->
+<!--        <td>3</td>-->
+
+    </tr>
+
+<!--om 1 cel te maken van de volledige eerste rij (dus over alle kolommen) via-->
+    <tr>
+        <td rowspan="2">4</td>
+<!--        <td>4</td>-->
+        <td>5</td>
+        <td rowspan="2">6</td>
+<!--        <td>6</td>-->
+    </tr>
+    <tr>
+<!--        <td>7</td>-->
+        <td>8</td>
+<!--        <td>9</td>-->
+    </tr>
+    </tbody>
+</table>
+
+
+
+<!-- table gebruiken we nooit voor opmaak,
+ thead = hoofding van tabel, tbody = inhoud van tabel
+ een nieuwe rij = <tr>, dan data toevoegen: <td>1</td>-->
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Images</h1>
+
+<img src="https://images.unsplash.com/photo-1552053831-71594a27632d"
+     alt="Foto van een hond" >
+<!--  CODE HIERBOVEN = NIET GOED!!!!!, want niemand anders kan pad vinden! Beter: foto
+slepen uit bestanden in linkervak, slepen naar dit vak:-->
+
+
+<img src="../hond.jpg" height="200" width="150"/></body>
+
+<!--  CODE HIERBOVEN = NIET GOED!!!!!, want nooit heigt="" of width="" gebruiken, eerst scalen in vb. Paint-->
+
+<img src="../hond-small.jpg" height="1500" width="935"/>
+<h1>The picture element</h1>
+
+<p>Resize the browser window to load different images.</p>
+
+<picture>
+
+<!-- source media: afhankelijk van de grootte van je scherm: welke foto moet ik inladen?-->
+
+    <source media="(max-width:650px)" srcset="images/img_white_flower.jpg">
+    <img src="images/cat.jpg" alt="cat"/>
+</picture>
+</html>

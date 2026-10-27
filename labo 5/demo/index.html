@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!--    <style>-->
+<!--        h1, h2 {-->
+<!--            color:yellow;-->
+<!--            font-size:2em;-->
+<!--        }-->
+<!--        p {-->
+<!--            color:red;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+<body>
+
+<!--1e (foute) manier-->
+<!--inline style NOOIT gebruiken:
+niet handig, naar  onderhoudbaarheid heel vervelend:
+stel je moet alles veranderen, bere onhandig-->
+
+<!--<h1 style="color:red">Cursus CSS</h1>-->
+
+
+
+<!--2e (juiste) manier-->
+<!--style-blok in <head>, via <style>-element met hierin:
+font-size: 2em, = 2 keer groter dan parent-grootte
+
+3) Default (standaard) = 16px, vastgelegd door W3C voor elk element
+2) Browser: gebruiker van de website
+1) Webbouwer: kan overrulen, als dit is ingesteld, wordt dit gekozen
+
+2em = 2 keer de waarde van de Default (<body> = Default = 16px, dus wordt 32px)-->
+
+
+
+<!--<h1>Cursus CSS</h1>-->
+<!--<h1>Geschiedenis</h1>-->
+<!--<h2>Cursus JavaScript</h2>-->
+
+<!--<p>Uitleg over CSS</p>-->
+
+
+
+<h1 class="styleRed">Cursus in klasse rood</h1>
+<h1 class="styleYellow">Cursus in klasse geel</h1>
+<h1 class="styleYellow">C#</h1>
+
+<h2 id="menu">Maak je keuze</h2>
+<h2 id="menu">Dit kan niet</h2>
+
+<section>
+    <article>
+        <h1>NET</h1>
+    </article>
+
+</section>
+
+<!--in <style>-blok worden waarden/opmaakelement aangegeven
+
+Stel, je wil zelfde opmaak voor h1 en h2 ==> met komma naast eerste element:
+h1 , h2
+
+Nadeel <style>-blok: ook moe!lijk om alles aan te passen-->
+
+
+<!-- 3e (beste) manier-->
+<!--
+nieuw extern document maken, verbinden met verschillende html indexen
+conventie webbouwers:
+=> opmaak voor alle pagina's gaan in externe style-sheet
+=> opmaak voor enkel deze pagina: in <style>-blok
+
+inline > <style-blok> > externe style-sheet
+
+style-sheet NOOIT op zelfde niveau als index.html
+
+nieuw directory: styles, daarin StyleSheet css (style.css)
+slepen in <head> in index.html
+
+in browser: Fn + F12 ==> elements bekijken, style vo css
+uitvinken om makkelijker te bekijken (css tijdelijk uitzetten)
+
+voorlopig: elk element staat links, met marge erboven en onder
+door: margin-block-start en margin-block-end
+fixen: invoegen in element.style (klikken op vorig element, hier font-size: 5em;
+-->
+
+
+<!--nu wil ik 2e h1: geschiedenis in het geel zetten
+probleem: h1 , h2 betekent voor alle h1's en alle h2's
+lukt niet meer via element-style, wel class: klasse definiëren
+opmaak geven aan klasse (soort blok)
+
+class-lijn (.): mag je oneindig veel gebruiken: opmaak voor merdere keren
+
+id-lijn (#): mag je maar 1 keer gebruiken, voor uniek element/unieke positie (vb. footer)-->
+
+</body>
+</html>

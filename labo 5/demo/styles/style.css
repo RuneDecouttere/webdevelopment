@@ -1,0 +1,36 @@
+h1,h2{
+    color: blue;
+    font-size: 5em;
+    margin: 0px;
+}
+/*class-selector*/
+.styleYellow {
+    color: yellow;
+}
+
+/*twijfelachtige code (tweestrijdig), ma laatste wint*/
+.styleRed {
+    color: yellow;
+    font-size: 3em;
+    color:red;
+}
+
+/*id-selector*/
+/*mag je maar 1 keer gebruiken*/
+#menu
+{
+    color: blue;
+}
+
+/*spatie tussen section h1: als h1 een voorouder heeft met element 'section', dan color: yellow*/
+
+section h1 {
+    color: yellow;
+}
+/*als h1 als parent element 'section' heeft, dan dit uitvoeren*/
+section>h1 {
+    color: green;
+}
+
+
+/*stel h1 , h2 als laatste, dan wint section>h1 toch, omdat het SPECIFIEKER is*/

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box</title>
+    <style>
+        body{
+            background-color: yellow;
+            color: green;
+            border : 2px solid red;
+            font-size: 5em;
+        }
+
+        /*
+        body geeft alles door aan kinderen, maar
+        BORDER / PADDING / MARGIN WORDEN NOOIT DOORGEGEVEN AAN (KLEINK)INDEREN
+        */
+
+        h1 {
+            color :red;
+            background-color: blue;
+            width: 50%;
+            font-size: 3em;
+            border : 1px solid red;
+            margin: 50px;
+            /*padding: 75px;*/
+            margin-top: 150px;
+            padding: 50px 20px 100px 300px;
+            padding: 200px 300px;
+        }
+        /*
+        er werd 50% gegeven aan de h1
+        later: website in 2 delen maken, dan verdeel je de schoendoos
+        margin = 0 (niet ingesteld)
+        border = 1 px
+        padding = 0
+        dus breedte is 50.06...
+        breedte van box wordt bepaald door width, border, padding margin
+
+        margin neemt achtergrondkleur niet over
+
+        als je geen nieuwe specifieke margin aangeeft voor een van de 4 (top/bottom/right/left), dan krijgen ze alle
+        4 dezelfde waarde uit margin
+
+        alle specifieke plekken in 1 padding/margin: in wijzerzin volgen
+        vb. padding 50px 20px 100px 300px in plaats van
+        padding-top: 50px
+        padding-right: 20px
+        padding-bottom: 100px
+        padding-left: 300px
+
+        padding: 200px 300px = in koppels, 200 voor top en bottom, 300 voor left en right
+
+        */
+
+        span {
+            width: 400px;
+            display: inline-block;
+        }
+        /*
+
+        span met enkel width doet niks, want width heeft geen invloed op een inline element
+        element ander gedaante geven via display: aanduiden als een blok, dan heeft width wel invloed (want blok)
+        inline-block als display: het moet een inline blok blijven, maar width heeft wel impact
+        zo kan je wel een breedte geven aan de spans
+
+
+        */
+        p{
+
+            width: 400px;
+            background-color: gray;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            display: inline-block;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /*
+        display: block zorgt ervoor dat de foto een blok vormt en op nieuwe regel komt
+        margin-left en marting-right: auto --> zet foto in het midden
+        */
+    </style>
+</head>
+<body>
+
+<h1>VIVES</h1>
+<h1>CSS</h1>
+<span>hallo</span>
+<span>CSS</span>
+
+<!--<p>Kortrijk</p>-->
+<!--span = inline element, neemt enkel plaats dat het nodig heeft-->
+<!--p = blok-element, begint altijd op nieuwe regel-->
+
+
+<span>Element 1</span>
+<span>Element 2</span>
+<span>Element 3</span>
+<span>Element 4</span>
+<span>Element 5</span>
+
+<h2>CSS</h2>
+
+
+<p class="selector">Selector</p>
+<p class="selector">Selector</p>
+
+<img src="images/foto.jpg" height="414" width="738"/>
+</body>
+</html>

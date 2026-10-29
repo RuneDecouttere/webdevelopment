@@ -1,0 +1,17 @@
+/*
+box = heel belangrijk
+elk element zien als een box (soort schoendoos)
+stel in paragraaf <p>VIVES</p>
+elke schoendoos heeft een border = dikte van karton
+in elk element: zeggen hoe dik de schoendoos is
+padding: tussen inhoud van de schoenen en de rand van de doos
+padding-left/right/top/bottom
+marging-left/right/top/bottom: hoe ver de dozen van elkaar moeten staan
+stel volgende doos mag niet tegen volgende doos:
+marginleft + paddingleft + border + <breedte van inhoud> + paddingright + border + marginright
+niks zeggen: schoendoos = volledige scherm
+
+
+*/
+
+h1

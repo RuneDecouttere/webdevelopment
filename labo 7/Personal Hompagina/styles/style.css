@@ -1,0 +1,130 @@
+/*alles in article, daarvan margin, padding left en right, borderm*/
+
+html {
+    background: #020024;
+    background: linear-gradient(139deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    border: 3px solid black;
+    padding: 5px 20px 20px 20px;
+    text-align: left;
+
+
+
+}
+
+hgroup:hover{
+    background-color: red;
+    font-size: 2em;
+}
+
+hgroup{
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+.articleHover:hover {
+    background-color: #c9ffeb;
+}
+
+
+.inzoemenOpFoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+.inzoemenOpFoto:hover {
+    transform: scale(1.3);
+    position: relative;
+    z-index: 10; /* zorgt dat de foto boven andere elementen komt */
+}
+
+a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+#PhilCollins {
+    display: flex;
+    width: 35%;
+}
+
+#LMJr {
+    display: flex;
+    width: 35%;
+}
+
+#StewartCopeland {
+    display: flex;
+    width: 35%;
+}
+
+
+.datagrid table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+.datagrid {
+    font: normal 12px/150% Verdana, Arial, Helvetica, sans-serif;
+    background: #fff;
+    margin-top: 50px;
+    overflow: hidden;
+    border: 3px solid #006699;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.datagrid table td, .datagrid table th {
+    padding: 10px 10px;
+}
+
+.datagrid table thead th {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F));
+    background: -moz-linear-gradient(center top, #006699 5%, #00557F 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color: #006699;
+    color: #F57F83;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.datagrid table thead th:first-child {
+    border: none;
+}
+
+.datagrid table tbody td {
+    color: #00496B;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.datagrid table tbody .alt td {
+    background: #E1EEF4;
+    color: #00496B;
+}
+
+.datagrid table tbody td:first-child {
+    border-left: none;
+}
+
+.datagrid table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.onbekend {
+    background-color: red;
+}
+
+.datagrid table tbody tr td.onbekend {
+    background-color: red;
+}

@@ -1,0 +1,38 @@
+body {
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+tr, td, th {
+    border: 2px dotted black;
+}
+
+caption {
+    background-color: rgb(170,170,200);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    font-weight: bold;
+}
+
+th {
+    background-color: rgb(35,37,70);
+    color: rgb(200,190,240);
+}
+
+tbody td:first-child, tbody td:last-child {
+    background-color: rgb(255, 220, 220);
+}
+
+table tbody td.feestdag {
+    background-color: rgb(250,120,120);
+}
+
+table tbody td.vorigeMaand {
+    background-color: #cccccc;
+    color: #999999;
+}

@@ -1,0 +1,21 @@
+.section {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+
+article {
+    padding: 10px;
+    width: calc(50% - 5px);
+}
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+voor cocktailoefening:
+opdelen in percentages !TEKENEN!
+komt niet tegen rand? --> margin
+tekst niet tegen border --> padding
+ster in blauw vak = backgr image, met padding zodat tekst er niet over gaat
+
+rechterblok: glaasjes bovenaan
+background-size: cover?????
+
+NEW OEF:
+voorbeeld positionering: allemaal div elementen met klasse area
+.area --> width en height, display: inline-block
+div = block element, dus alle divs zullen onder elkaar komen, maar inline-block zorgt dat het zoals een span is,
+maar width en height werken wel
+
+nergens margin
+spatie tussen blokken door spaties die in html voor '<div' staan: meerdere spaties wordt door browser heleid
+naar 1 spatie

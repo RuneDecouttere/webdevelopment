@@ -1,0 +1,91 @@
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    color: #444444;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+#wrapper {
+    width: 95%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+h1, h2 {
+    color: #007e7e;
+}
+h1 {
+    font-size: 150%;
+}
+h2{
+    font-size: 130%;
+}
+header {
+    text-align: center;
+}
+#imgHeader {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: underline;
+    color: saddlebrown;
+}
+#content {
+    float: left;
+    width: 70%;
+}
+
+#guarantee {
+    margin: 30px;
+    padding: 20px 20px 20px 100px;
+    color: #444444;
+    background: #a7cece url(../images/background.gif) no-repeat 5px 5px;
+    border: 3px dashed #ffffff;
+    font-style: italic;
+}
+
+.cd {
+    font-style: italic;
+}
+.artist {
+    font-weight: bold;
+}
+
+#elixirs {
+    float: right;
+    width: 27%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border: 1px solid #7fc4c4;
+    text-align: center;
+    font-size: 80%;
+}
+#elixirs h1 {
+    background: url(../images/cocktail.gif) repeat-x center;
+    padding: 15px 0;
+    font-size: 150%;
+    color: black;
+}
+
+#elixirs h2:nth-of-type(1){
+    color: red;
+}
+#elixirs h2:nth-of-type(2){
+    color: green;
+}
+#elixirs h2:nth-of-type(3) {
+    color: magenta;
+}
+
+#elixirs a:hover {
+    background-color: #8b4513;
+    color: #ffffff;
+}
+footer {
+    clear: both;
+    text-align: center;
+    font-size: 50%;
+    padding-top: 20px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labo 8 - float2</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>demo 1</title>
+    <style>
+        article#box1{
+            background-color: black;
+            color:red;
+            height: 75px;
+            /*volledige breedte wordt ingenomen (geen width: 100%)*/
+            /*nieuwe regel, want dit is een blok element*/
+        }
+        article#box2{
+            background-color: blue;
+            width: 15%;
+            height: 100px;
+            float: left;
+            /*float: left zorgt voor element uit natuurlijke flow halen, wordt als zwevend gezien*/
+            /**/
+        }
+        article#box3{
+            background-color: green;
+
+            width: 70%;
+            height: 100px;
+            /*groene blok BEGINT EIGENLIJK WAAR BLAUW BLOKJE START, want blauw blok = flow, wordt niet gezien*/
+            /*testen: heigt van blauw blok verminderen, dan zie je overlapping*/
+            float: left;
+            /*groen blok erkent blauw blokje nu als float, dus zal ernaast positioneren*/
+            /*grijs blokje zet achter rood blokje*/
+        }
+        article#box4{
+            background-color: silver;
+            width: 15%;
+            height: 100px;
+            float: left;
+        }
+        article#box5{
+            background-color:red;
+            margin-top: 100px;
+            width: 100%;
+            clear: both;
+            /*ik wil links, rechts, boven wil ik geen float elementen --> zal elementen plots wel zien*/
+            height: 120px;
+            /*rood blok ziet andere blokken NIET als float, dus plaatst zich waar hij wil*/
+        }
+    </style>
+</head>
+<body>
+<article id="box1">box 1</article>
+<article id="box2">box 2</article>
+<article id="box3">box 3</article>
+<article id="box4">box 4</article>
+<article id="box5">box 5</article>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #334155;
+    margin: 0;
+}
+
+header {
+    background-color: #17324d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #244b6b;
+    text-align: center;
+    margin: 0;
+}
+
+nav li {
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #387c83;
+}
+
+main {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    background-color: white;
+    border-radius: 10px;
+    vertical-align: 20px;
+    text-align: center;
+}
+
+main > p {
+    font: italic 14px "Lucida Grande", Verdana, sans-serif;
+}
+
+#workshop h2::after {
+    content: "★ TIP";
+    color: #b45309;
+}
+
+.status {
+    color: green;
+}
+
+.status.full {
+    color: red
+}
+
+/*inzichtvraag: de box zal dan in totaal, inclusief margins, een horizontale ruimte innemen van 582px px:
+    inhoudsbreedte (500px) + 2X padding (2X20px) + 2X border (2x 1px) + 2x margin (2*20px) = 500 + 40 + 2 + 40 = 582px
+*/
